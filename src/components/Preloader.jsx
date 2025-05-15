@@ -1,9 +1,36 @@
+import { motion, AnimatePresence } from "framer-motion";
+
 function Preloader() {
-    return (
-        <div>
-            Hello
-        </div>
-    )
+  return (
+    <motion.section
+      initial={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="fixed flex h-full w-full flex-col justify-center items-center bg-white z-50"
+    >
+      <motion.div
+        initial={{ scale: 0.95 }}
+        animate={{ scale: 1.05 }}
+        transition={{
+          duration: 1.2,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        }}
+        className="backdrop-blur-md bg-blue-100 rounded-2xl shadow-md px-5 pt-6"
+      >
+        <img
+          src="/Esther.png"
+          alt="Profile Avatar"
+          loading="eager"
+          className="w-[130px] h-auto"
+        />
+      </motion.div>
+      <div className="absolute bottom-0 flex px-3 pb-7 gap-2 font-semibold text-[1.7rem] font-poppins">
+        <h1>Esther Oluwabuyi</h1>-<h2>Frontend Developer</h2>
+      </div>
+    </motion.section>
+  );
 }
 
-export default Preloader
+export default Preloader;
