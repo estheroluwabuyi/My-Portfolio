@@ -26,7 +26,7 @@ function Preloader() {
           className="w-[130px] h-auto"
         />
       </motion.div>
-      <div className="absolute bottom-0 flex px-3 pb-7 gap-2 font-semibold md:text-[1.55rem] text-[1.25rem] font-poppins">
+      <div className="absolute bottom-0 flex px-3 pb-7 gap-2 font-semibold md:text-[1.7rem] text-[1.25rem] font-poppins">
         <h1>Esther Oluwabuyi</h1>-<h2>Frontend Developer</h2>
       </div>
     </motion.section>
