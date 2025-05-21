@@ -17,16 +17,16 @@ function Preloader() {
           repeatType: "reverse",
           ease: "easeInOut",
         }}
-        className="backdrop-blur-md bg-blue-100 rounded-2xl shadow-md px-5 pt-6"
+        className="backdrop-blur-md bg-blue-100 rounded-2xl shadow-md px-7 pt-7"
       >
         <img
           src="/Esther.png"
           alt="Profile Avatar"
           loading="eager"
-          className="w-[130px] h-auto"
+          className="w-[100px] h-auto"
         />
       </motion.div>
-      <div className="absolute bottom-0 flex px-3 pb-7 gap-2 font-semibold md:text-[1.7rem] text-[1.25rem] font-poppins">
+      <div className="absolute bottom-0 flex px-3 pb-7 gap-2 font-semibold md:text-[1.7rem] text-[1.25rem] font-poppins  preloader-text">
         <h1>Esther Oluwabuyi</h1>-<h2>Frontend Developer</h2>
       </div>
     </motion.section>

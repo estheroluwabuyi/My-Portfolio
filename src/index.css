@@ -1,14 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-poppins: "Poppins", sans-serif;
+  --font-great-vibes: "Great Vibes", cursive;
+  --color-primary: #f0eee4;
+  --color-secondary: #0c0c0c;
 }
 
 :root {
   --primary-font: "Inter", sans-serif;
   --secondary-font: "Poppins", sans-serif;
+
+  --primary-color: #f0eee4;
+  --light-black: #0c0c0c;
 }
 
 /* Global Reset  */
@@ -19,14 +25,14 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: var(--primary-font);
+  color: var(--primary-color);
 }
 
 button {
   cursor: pointer;
   outline: none;
-  /* transition: all 0.3s ease-in-out; */
 }
 
 a {
@@ -35,6 +41,20 @@ a {
   font-size: inherit;
 }
 
+/* Preloader */
+.preloader-text {
+  color: var(--light-black);
+}
+
+/* Links hover */
+.mobile-link.active {
+  background-color: rgba(240, 238, 228, 0.8);
+}
+
+.desktop-link.active {
+  background-color: rgba(240, 238, 228);
+  color: var(--light-black);
+}
 /* /* --breakpoint-*:initial;
     --breakpoint-sm: 480px;
     --breakpoint: 768px;
