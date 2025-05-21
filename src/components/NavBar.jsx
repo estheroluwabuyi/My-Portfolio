@@ -28,7 +28,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="flex justify-between items-center w-full px-[1.5rem] py-[1rem] md:py-[2rem] fixed top-0 left-0 z-50 md:justify-around font-poppins">
+      <nav className="flex justify-between items-center w-full px-[2rem] py-[1rem] md:py-[2rem] fixed top-0 left-0 z-50 md:justify-around font-poppins">
         <div className="text-[3rem] md:text-[4rem] font-great-vibes font-semibold tracking-wide">
           <Link to="/">Esther.</Link>
         </div>
