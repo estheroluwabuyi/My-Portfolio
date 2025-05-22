@@ -33,7 +33,7 @@ function NavBar() {
           <Link to="/">Esther.</Link>
         </div>
 
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <button
             className="w-[45px] h-[45px] p-0.5 z-50 "
             onClick={handleToggleIcon}
@@ -68,24 +68,26 @@ function NavBar() {
 
           <AnimatePresence>
             {toggle && (
-              <motion.div
-                className="absolute top-full left-0 w-full flex flex-col justify-between items-center text-center gap-[1.5rem] p-1.5 text-secondary text-[1.5rem] sm:text-[1.7rem] backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-lg"
-                variants={slideVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                transition={{ type: "tween", duration: 0.4 }}
-              >
-                {links.map(({ link, text }, index) => (
-                  <NavLink
-                    key={index}
-                    to={link}
-                    className="p-[1.5rem] bg-primary w-full text-center rounded-lg hover:bg-primary/90 transition mobile-link"
-                  >
-                    {text}
-                  </NavLink>
-                ))}
-              </motion.div>
+              <div className="absolute top-full left-0 w-full px-[2rem]">
+                <motion.div
+                  className=" flex flex-col justify-between items-center text-center gap-[1.5rem] p-1.5  text-secondary text-[1.5rem] sm:text-[1.7rem] backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-lg"
+                  variants={slideVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  transition={{ type: "tween", duration: 0.4 }}
+                >
+                  {links.map(({ link, text }, index) => (
+                    <NavLink
+                      key={index}
+                      to={link}
+                      className="p-[1.5rem] bg-primary w-full text-center rounded-lg hover:bg-primary/90 transition mobile-link "
+                    >
+                      {text}
+                    </NavLink>
+                  ))}
+                </motion.div>{" "}
+              </div>
             )}
           </AnimatePresence>
         </div>

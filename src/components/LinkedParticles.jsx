@@ -27,13 +27,13 @@ const LinkedParticles = (props) => {
       fpsLimit: 100,
       particles: {
         color: {
-          value: "#FFFFFF",
+          value: "#f0eee4",
         },
         links: {
-          color: "#FFFFFF",
+          color: "#f0eee4",
           distance: 120,
           enable: true,
-          opacity: 0.3,
+          opacity: 0.8,
           width: 0.5,
           blink: true,
         },
@@ -50,12 +50,12 @@ const LinkedParticles = (props) => {
         number: {
           density: {
             enable: true,
-            area: 300,
+            area: 800,
           },
           value: 170,
         },
         opacity: {
-          value: { min: 0.3, max: 0.9 },
+          value: { min: 0.3, max: 0.8 },
           animation: {
             enable: true,
             speed: 0.5,
