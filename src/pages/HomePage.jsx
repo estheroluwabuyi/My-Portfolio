@@ -5,6 +5,7 @@ const HomePage = () => {
   return (
     <div className="bg-black">
       <Hero />
+     {/* <Footer bg="bg-pink-800" /> */}
      <Footer />
     </div>
   );

@@ -30,7 +30,7 @@ function NavBar() {
     window.addEventListener("scroll", handleScroll);
 
     // clean up function
-    return () => window.removeEventListener("scroll", handleScroll);
+    // return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
 
@@ -91,7 +91,7 @@ function NavBar() {
           {toggle && (
             <div className="absolute top-full left-0 w-full ">
               <motion.div
-                className=" flex flex-col justify-between items-center text-center gap-[1.5rem] p-1.5  text-secondary text-[1.5rem] sm:text-[1.7rem] backdrop-blur-md bg-white/20 border border-white/30 rounded-2xl shadow-lg"
+                className=" flex flex-col justify-between items-center text-center gap-[1.5rem] p-1.5  text-secondary text-[1.5rem] sm:text-[1.7rem] backdrop-blur-md bg-secondary/70 border border-white/30 rounded-2xl shadow-lg"
                 variants={slideVariants}
                 initial="hidden"
                 animate="visible"
