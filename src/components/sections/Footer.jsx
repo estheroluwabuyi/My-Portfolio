@@ -1,9 +1,9 @@
 import Esther from "/images/avatar-esther.jpg";
 
 
-function Footer() {
+function Footer({bg=""}) {
     return (
-        <div className=" relative z-200">
+        <div className={`relative z-200 ${bg}`}>
              <div className="w-[110px] h-[110px] md:w-[130px] md:h-[130px] rounded-[50%] border-2 border-primary bg-secondary p-[2.5px] mb-7">
                       <img
                         src={Esther}
