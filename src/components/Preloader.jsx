@@ -18,7 +18,7 @@ function Preloader() {
           repeatType: "reverse",
           ease: "easeInOut",
         }}
-        className="backdrop-blur-md bg-blue-100 rounded-2xl shadow-md px-7 pt-7"
+        className="backdrop-blur-md bg-primary/50 rounded-2xl shadow-md px-7 pt-7"
       >
         <img
           src={Esther}

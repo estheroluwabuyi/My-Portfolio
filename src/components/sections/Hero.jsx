@@ -11,6 +11,7 @@ function Hero() {
           <img
             src={Esther}
             alt="Esther's avatar"
+             loading="eager"
             className="w-full h-full rounded-[50%] object-cover"
           />
         </div>
