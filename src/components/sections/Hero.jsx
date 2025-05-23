@@ -10,7 +10,7 @@ function Hero() {
     <section className="relative z-50 h-screen w-full  pt-[7rem]  md:pt-[10rem]">
       {/* HERO */}
       <div className="absolute z-100 flex flex-col justify-center items-center w-full h-full top-0 left-0 px-[2rem]">
-        <div className="w-[110px] h-[110px] md:w-[130px] md:h-[130px] rounded-[50%] border-2 border-primary bg-secondary p-[2.5px] mb-7">
+        <div className="w-[120px] h-[120px] md:w-[135px] md:h-[135px] rounded-[50%] border-2 border-primary bg-secondary p-[2.5px] mb-7">
           <img
             src={Esther}
             alt="Esther's avatar"
