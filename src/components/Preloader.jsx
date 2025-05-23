@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import Esther from "/Esther.png"
 
 function Preloader() {
   return (
@@ -6,7 +7,7 @@ function Preloader() {
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="fixed flex h-full w-full flex-col justify-center items-center bg-white z-50"
+      className="fixed flex h-full w-full flex-col justify-center items-center bg-primary z-50"
     >
       <motion.div
         initial={{ scale: 0.95 }}
@@ -20,7 +21,7 @@ function Preloader() {
         className="backdrop-blur-md bg-blue-100 rounded-2xl shadow-md px-7 pt-7"
       >
         <img
-          src="/Esther.png"
+          src={Esther}
           alt="Profile Avatar"
           loading="eager"
           className="w-[100px] h-auto"

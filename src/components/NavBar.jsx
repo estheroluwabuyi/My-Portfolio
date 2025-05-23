@@ -27,8 +27,8 @@ function NavBar() {
   }, [location.pathname]);
 
   return (
-    <>
-      <nav className="flex justify-between items-center w-full px-[2rem] py-[1rem] md:py-[2rem] fixed top-0 left-0 z-50 md:justify-around font-poppins">
+    
+      <nav className="flex justify-between items-center w-full px-[2rem] py-[1rem] md:py-[2rem] fixed top-0 left-0 z-150 md:justify-around font-poppins">
         <div className="text-[3rem] md:text-[4rem] font-great-vibes font-semibold tracking-wide">
           <Link to="/">Esther.</Link>
         </div>
@@ -57,9 +57,9 @@ function NavBar() {
                   src="/menu.svg"
                   alt="open menu"
                   className="w-full h-full "
-                  initial={{ opacity: 0 }}
+                  initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
+                  exit={{ opacity: 0.5 }}
                   transition={{ duration: 0.3 }}
                 />
               )}
@@ -104,8 +104,10 @@ function NavBar() {
           ))}
         </div>
       </nav>
-    </>
+    
   );
 }
 
 export default NavBar;
+
+// [View Projects] [Download Resume]
