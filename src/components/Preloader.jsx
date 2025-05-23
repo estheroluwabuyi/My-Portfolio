@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import Esther from "/Esther.png"
+import Esther from "/images/Esther.png"
 
 function Preloader() {
   return (

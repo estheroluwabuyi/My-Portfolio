@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+
 import LinkedParticles from "../LinkedParticles";
-import Esther from "/avatar-esther.jpg";
+import Esther from "/images/avatar-esther.jpg";
 import { motion } from "framer-motion";
+import resume from "/pdf/Oluwabuyi_Esther_CV.pdf";
 
 function Hero() {
   return (
@@ -11,29 +14,39 @@ function Hero() {
           <img
             src={Esther}
             alt="Esther's avatar"
-             loading="eager"
+            loading="eager"
             className="w-full h-full rounded-[50%] object-cover"
           />
         </div>
 
         <div className="text-center">
           <h1 className="text-[2rem] font-poppins sm:text-[2.5rem] md:text-[4rem] font-bold">
-            Hi, I'm Esther Oluwabuyi — a Frontend Developer
+            Hi, I'm Esther Oluwabuyi — a Frontend Developer.
           </h1>
 
-         <motion.p
-  className="text-[1.17rem] mt-5 sm:text-[1.25rem] md:text-[1.65rem] leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl m-auto"
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.2, delay: 0.3 }}
->
-  I build fast, responsive, and visually appealing websites with clean
-  and seamless user experiences.
-</motion.p>
+          <motion.p
+            className="text-[1.17rem] mt-5 sm:text-[1.25rem] md:text-[1.65rem] leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl m-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, delay: 0.3 }}
+          >
+            I build fast, responsive, and visually appealing websites with clean
+            and seamless user experiences.
+          </motion.p>
         </div>
 
-        <div>
-          <button></button>
+        <div className="flex gap-[2.5rem]  mt-6">
+          <a href={resume} download>
+            <button className="px-6 py-3 bg-primary text-secondary rounded-lg font-semibold hover:bg-primary/90 transition md:px-10 md:py-5 sm:px-8 sm:py-4">
+              View Resume
+            </button>
+          </a>
+
+          <Link to="/projects">
+            <button className="px-6 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-secondary transition md:px-10 md:py-5 sm:px-8 sm:py-4">
+              See Projects
+            </button>
+          </Link>
         </div>
       </div>
 

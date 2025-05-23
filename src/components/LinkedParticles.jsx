@@ -33,7 +33,7 @@ const LinkedParticles = (props) => {
           color: "#f0eee4",
           distance: 120,
           enable: true,
-          opacity: 0.9,
+          opacity: 0.7,
           width: 0.5,
           blink: true,
         },
@@ -55,7 +55,7 @@ const LinkedParticles = (props) => {
           value: 170,
         },
         opacity: {
-          value: { min: 0.3, max: 0.8 },
+          value: { min: 0.3, max: 0.6 },
           animation: {
             enable: true,
             speed: 0.5,

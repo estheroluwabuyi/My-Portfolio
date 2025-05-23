@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import closeIcon from "/images/close.svg"
+import menuIcon from "/images/menu.svg"
 
 const links = [
   { link: "/about", text: "About me" },
@@ -43,7 +45,7 @@ function NavBar() {
               {toggle ? (
                 <motion.img
                   key="close"
-                  src="/close.svg"
+                  src={closeIcon}
                   alt="close menu"
                   className="w-full h-full "
                   initial={{ opacity: 0, rotate: 90 }}
@@ -54,7 +56,7 @@ function NavBar() {
               ) : (
                 <motion.img
                   key="menu"
-                  src="/menu.svg"
+                  src={menuIcon}
                   alt="open menu"
                   className="w-full h-full "
                   initial={{ opacity: 0.5 }}
