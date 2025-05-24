@@ -1,22 +1,44 @@
-import Esther from "/images/avatar-esther.jpg";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
+function Footer({ bg = "" }) {
+  return (
+    <div className={`relative flex justify-center items-center flex-col gap-7 z-200 ${bg} py-5 px-5`}>
+      <div className="flex gap-10 text-[2rem] md:text-[2.5rem] justify-between">
+        <a
+          href="https://www.linkedin.com/in/esther-oluwabuyi-838651234/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className=" transition hover:scale-110 duration-600 ease-in-out hover:opacity-80" />
+        </a>
+        <a
+          href="https://github.com/estheroluwabuyi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className=" transition hover:scale-110 duration-600 ease-in-out hover:opacity-80" />
+        </a>
+        <a
+          href="https://x.com/thecodegirlie_"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTwitter className=" transition hover:scale-110 duration-600 ease-in-out hover:opacity-80" />
+        </a>
+        <a href="mailto:estheroluwabuyi@gmail.com">
+          <HiOutlineMail className=" transition hover:scale-110 duration-600 ease-in-out hover:opacity-80" />
+        </a>
+      </div>
 
-function Footer({bg=""}) {
-    return (
-        <div className={`relative z-200 ${bg}`}>
-             <div className="w-[110px] h-[110px] md:w-[130px] md:h-[130px] rounded-[50%] border-2 border-primary bg-secondary p-[2.5px] mb-7">
-                      <img
-                        src={Esther}
-                        alt="Esther's avatar"
-                        loading="eager"
-                        className="w-full h-full rounded-[50%] object-cover"
-                      />
-                    </div>
-            
-            HELLO FOOTER
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </div>
-    )
+      <div className="text-center md:text-[1.5rem]">
+        <p>
+          &copy; {new Date().getFullYear()} Esther Oluwabuyi. All rights
+          reserved.
+        </p>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;

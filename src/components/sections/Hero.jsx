@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import LinkedParticles from "../LinkedParticles";
 import Esther from "/images/avatar-esther.jpg";
 import { motion } from "framer-motion";
-import resume from "/pdf/Oluwabuyi_Esther_CV.pdf";
+import resume from "/pdf/Esther_Oluwabuyi_CV.pdf";
 
 function Hero() {
   return (
@@ -39,13 +39,13 @@ function Hero() {
 
           <div className="flex gap-[2.5rem]  mt-6 justify-center">
             <a href={resume} download>
-              <button className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold hover:bg-transparent border hover:border-primary  hover:text-primary transition md:px-10 md:py-5 sm:px-8 sm:py-4 hover:scale-105">
+              <button className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold hover:bg-transparent border hover:border-primary  hover:text-primary transition md:px-10 md:py-5 sm:px-8 sm:py-4 hover:scale-105 duration-600 ease-in-out ">
                 View Resume
               </button>
             </a>
 
             <Link to="/projects">
-              <button className="px-7 py-3.5 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-secondary transition md:px-10 md:py-5 sm:px-8 sm:py-4 hover:scale-105">
+              <button className="px-7 py-3.5 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-secondary transition md:px-10 md:py-5 sm:px-8 sm:py-4 hover:scale-105 duration-600 ease-in-out ">
                 See Projects
               </button>
             </Link>

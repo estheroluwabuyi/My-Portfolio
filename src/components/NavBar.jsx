@@ -30,7 +30,7 @@ function NavBar() {
     window.addEventListener("scroll", handleScroll);
 
     // clean up function
-    // return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
 
@@ -47,7 +47,7 @@ function NavBar() {
   return (
     <nav
       className={`fixed top-0 left-0 z-150 w-full px-[2rem] py-[1rem] md:py-[2rem] flex justify-between items-center md:justify-around font-poppins transition-colors duration-300 ${
-        scrolled ? "bg-black/30 backdrop-blur-md border-b border-white/10" : "bg-transparent"
+        scrolled ? "bg-secondary/30 backdrop-blur-md border-b border-white/10" : "bg-transparent"
       }`}
     >
       <div className="text-[3rem] md:text-[4rem] font-great-vibes font-semibold tracking-wide">
@@ -102,7 +102,7 @@ function NavBar() {
                   <NavLink
                     key={index}
                     to={link}
-                    className="p-[1.5rem] bg-primary w-full text-center rounded-lg hover:bg-primary/90 transition mobile-link "
+                    className="p-[1.5rem] bg-primary w-full text-center rounded-lg hover:bg-primary/90 transition mobile-link duration-600 linear"
                   >
                     {text}
                   </NavLink>
@@ -118,7 +118,7 @@ function NavBar() {
           <NavLink
             key={index}
             to={link}
-            className="p-[1.5rem] rounded-lg hover:bg-primary/90 hover:!text-secondary transition desktop-link"
+            className="p-[1.5rem] rounded-lg hover:bg-primary/90 hover:!text-secondary transition desktop-link duration-1000 linear "
           >
             {text}
           </NavLink>
