@@ -20,18 +20,16 @@ function Hero() {
         </div>
 
         <motion.div
-         initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.1, delay: 0.3 }}>
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.1, delay: 0.3 }}
+        >
           <div className="text-center">
             <h1 className="text-[2rem] font-poppins sm:text-[2.5rem] md:text-[4rem] font-bold">
               Hi, I'm Esther Oluwabuyi — a Frontend Developer.
             </h1>
 
-            <p
-              className="text-[1.17rem] mt-5 sm:text-[1.25rem] md:text-[1.65rem] leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl m-auto"
-             
-            >
+            <p className="text-[1.17rem] mt-5 sm:text-[1.25rem] md:text-[1.65rem] leading-relaxed max-w-2xl sm:max-w-3xl md:max-w-4xl m-auto">
               I build fast, responsive, and visually appealing websites with
               clean and seamless user experiences.
             </p>
@@ -39,13 +37,23 @@ function Hero() {
 
           <div className="flex gap-[2.5rem]  mt-6 justify-center">
             <a href={resume} download>
-              <button className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold hover:bg-transparent border hover:border-primary  hover:text-primary transition md:px-10 md:py-5 sm:px-8 sm:py-4 hover:scale-105 duration-600 ease-in-out ">
+              <button
+                className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold hover:bg-transparent border transition md:px-10 md:py-5 sm:px-8 sm:py-4 duration-600 ease-in-out
+              hover:scale-105 active:scale-95
+              hover:border-primary active:border-primary
+              hover:text-primary active:text-primary"
+              >
                 View Resume
               </button>
             </a>
 
             <Link to="/projects">
-              <button className="px-7 py-3.5 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-secondary transition md:px-10 md:py-5 sm:px-8 sm:py-4 hover:scale-105 duration-600 ease-in-out ">
+              <button
+                className="px-7 py-3.5 border border-primary text-primary rounded-lg font-semibold duration-600 ease-in-out transition md:px-10 md:py-5 sm:px-8 sm:py-4
+                hover:scale-105 active:scale-95
+               hover:bg-primary active:bg-primary
+                hover:text-secondary active:text-secondary"
+              >
                 See Projects
               </button>
             </Link>
