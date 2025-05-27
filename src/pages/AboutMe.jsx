@@ -10,6 +10,10 @@ function AboutMe() {
           src={Esther}
           alt="Esther Oluwabuyi"
           className=" w-full h-full rounded-[40%]"
+          width={300}
+          height={300}
+          loading="eager"
+          // decoding="async"
         />
       </div>
 

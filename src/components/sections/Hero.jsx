@@ -28,6 +28,8 @@ function Hero() {
         <div className="w-[120px] h-[120px] md:w-[135px] md:h-[135px] rounded-[50%] border-2 border-primary bg-secondary p-[2.5px] mb-7">
           <img
             src={Esther}
+            width={120}
+            height={120}
             alt="Esther's avatar"
             loading="eager"
             className="w-full h-full rounded-[50%] object-cover filter brightness-75"
