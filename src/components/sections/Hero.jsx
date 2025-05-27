@@ -54,10 +54,11 @@ function Hero() {
             {/* <a href={resume} download> */}
               <button
               onClick={handleDownloadResume}
-                className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold hover:bg-transparent border transition md:px-10 md:py-5 sm:px-8 sm:py-4 duration-600 ease-in-out
+                className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold  border transition md:px-10 md:py-5 sm:px-8 sm:py-4 duration-600 ease-in-out
               hover:scale-105 active:scale-95
               hover:border-primary active:border-primary
-              hover:text-primary active:text-primary"
+              hover:text-primary active:text-primary
+            hover:bg-transparent active:bg-transparent"
               >
                 View Resume
               </button>
