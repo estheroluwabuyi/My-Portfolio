@@ -6,6 +6,21 @@ import { motion } from "framer-motion";
 import resume from "/pdf/Esther_Oluwabuyi_CV.pdf";
 
 function Hero() {
+
+  const handleDownloadResume = () => {
+  if (!navigator.onLine) {
+    alert("You’re currently offline. Please connect to the internet to download the resume.");
+    return;
+  }
+  
+  const link = document.createElement('a');
+  link.href = `${resume}`;
+  link.download = 'Esther_Oluwabuyi_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
   return (
     <section className="relative z-50 h-screen w-full  pt-[7rem]  md:pt-[10rem]">
       {/* HERO */}
@@ -36,8 +51,9 @@ function Hero() {
           </div>
 
           <div className="flex gap-[2.5rem]  mt-6 justify-center">
-            <a href={resume} download>
+            {/* <a href={resume} download> */}
               <button
+              onClick={handleDownloadResume}
                 className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold hover:bg-transparent border transition md:px-10 md:py-5 sm:px-8 sm:py-4 duration-600 ease-in-out
               hover:scale-105 active:scale-95
               hover:border-primary active:border-primary
@@ -45,7 +61,7 @@ function Hero() {
               >
                 View Resume
               </button>
-            </a>
+            {/* </a> */}
 
             <Link to="/projects">
               <button

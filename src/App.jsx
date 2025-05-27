@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Projects from "./pages/Projects";
+import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/PageNotFound";
 import Layout from "./pages/Layout";
@@ -29,6 +30,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/home" element={<HomePage />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/about" element={<AboutMe />} />
               <Route path="/contact" element={<Contact />} />
             </Route>
             <Route path="*" element={<NotFound />} />
