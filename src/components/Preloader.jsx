@@ -24,9 +24,9 @@ function Preloader() {
           src={Esther}
           alt="Profile Avatar"
           loading="eager"
-          width={100}
-          height={10
           className="w-[100px] h-auto"
+          width={100}
+          height={100}
         />
       </motion.div>
       <div className="absolute bottom-0 flex px-3 pb-7 gap-2 font-semibold md:text-[1.7rem] text-[1.25rem] font-poppins  preloader-text">

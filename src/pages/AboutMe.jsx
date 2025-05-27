@@ -11,7 +11,7 @@ function AboutMe() {
           alt="Esther Oluwabuyi"
           className=" w-full h-full rounded-[40%]"
           width={300}
-          height={300}
+          height={400}
           loading="eager"
           // decoding="async"
         />
