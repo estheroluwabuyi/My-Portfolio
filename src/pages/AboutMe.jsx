@@ -18,12 +18,12 @@ function AboutMe() {
       </section>
 
       {/* Text Section */}
-      <section className="w-full lg:max-w-4xl max-w-6xl flex flex-col gap-4 ">
+      <section className="w-full lg:max-w-4xl md:max-w-5xl flex flex-col gap-4 ">
         <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary text-center">
           About Me
         </h1>
 
-        <p className="leading-relaxed text-center md:text-left">
+        <p className="leading-relaxed text-center lg:text-left">
           Hello! I'm <span className="font-semibold">Esther Oluwabuyi</span>, a passionate Frontend Developer with over
           3 years of experience. I love crafting functional, user-friendly, and
           visually appealing websites, and I enjoy bringing creative ideas to
