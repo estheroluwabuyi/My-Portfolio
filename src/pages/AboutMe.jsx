@@ -30,7 +30,7 @@ function AboutMe() {
           life in the browser. Watching a project evolve from a basic structure into a dynamic, responsive, and engaging user experience is truly rewarding for me. <br />
           When I'm not coding, you’ll find me exploring new technologies, journaling
           my thoughts, dreaming of future travel adventures, or enjoying a good
-          book (I'm a big V.C. Andrews fan!). I believe in continuous learning
+          book (I'm a big V.C. Andrews fan!). <br/>I believe in continuous learning
           and always strive to sharpen my skills. I'm excited to connect with
           like-minded individuals and work on projects that make a real impact.
           Let's create something amazing together!
