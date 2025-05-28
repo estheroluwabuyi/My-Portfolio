@@ -5,15 +5,15 @@ function AboutMe() {
     <div className="min-h-screen bg-black pt-[10rem] px-[2rem] md:pt-[13rem] flex flex-col overflow-hidden">
       {/* Image  */}
 
-      <div className=" self-center bg-secondary  w-[300px] sm:w-[400px] md:w-[450px] rounded-[40%]  p-[0.45rem] h-auto z-100 flex justify-center items-center border-[0.5rem] border-primary ">
+      <div className=" self-center p-3 w-full md:w-3/4 lg:w-1/2 max-w-[450px]  ">
         <img
           src={Esther}
           alt="Esther Oluwabuyi"
-          className=" w-full h-full rounded-[40%]"
-          width={300}
+          className=" w-full rounded-[40%] bg-secondary p-[0.45rem] h-auto z-100 flex justify-center items-center border-[0.5rem] border-primary"
+          width={400}
           height={400}
-          loading="eager"
-          // decoding="async"
+          loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -27,3 +27,4 @@ function AboutMe() {
 
 export default AboutMe;
 // md:max-w-6xl
+// convert img to webp
