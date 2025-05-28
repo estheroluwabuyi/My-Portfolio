@@ -12,7 +12,7 @@ function AboutMe() {
           className=" w-full rounded-[40%] bg-secondary p-[0.45rem] h-auto z-100 flex justify-center items-center border-[0.5rem] border-primary"
           width={400}
           height={450}
-          loading="lazy"
+          loading="eager"
           decoding="async"
         />
       </div>
