@@ -2,7 +2,8 @@ import Esther from "/images/About-1.webp";
 
 function AboutMe() {
   return (
-    <div className="min-h-screen bg-black pt-[10rem] px-[2rem] md:pt-[13rem] pb-[3rem] flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20">
+    <div className="min-h-screen bg-black pt-[10rem] px-[2rem] md:pt-[13rem] pb-[3rem]">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20">
       
       {/* Image Section */}
       <section className="lg:self-end p-2 w-full md:w-3/4 lg:w-1/2 max-w-[400px] mb-10 shrink-0">
@@ -48,6 +49,7 @@ function AboutMe() {
           </div> 
         </div>
       </section>
+    </div>
     </div>
   );
 }
