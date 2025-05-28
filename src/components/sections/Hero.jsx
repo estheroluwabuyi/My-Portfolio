@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import LinkedParticles from "../LinkedParticles";
-import Esther from "/images/avatar-esther.webp";
+import Esther from "/images/avatar-esther.jpg";
 import { motion } from "framer-motion";
 import resume from "/pdf/Esther_Oluwabuyi_CV.pdf";
 
