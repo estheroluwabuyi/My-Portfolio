@@ -1,11 +1,11 @@
-import Esther from "/images/About-1.jpg";
+import Esther from "/images/About-1.webp";
 
 function AboutMe() {
   return (
     <div className="min-h-screen bg-black pt-[10rem] px-[2rem] md:pt-[13rem] flex flex-col overflow-hidden">
       {/* Image  */}
 
-      <div className=" self-center p-3 w-full md:w-3/4 lg:w-1/2 max-w-[450px]  ">
+      <div className=" self-center p-2 w-full md:w-3/4 lg:w-1/2 max-w-[450px]  ">
         <img
           src={Esther}
           alt="Esther Oluwabuyi"
