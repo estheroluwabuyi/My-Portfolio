@@ -1,8 +1,11 @@
+import Skills from "../components/sections/Tools.jsx";
+import Footer from "../components/sections/Footer.jsx";
 import Esther from "/images/About-1.webp";
 
 function AboutMe() {
   return (
-    <div className="min-h-screen bg-black pt-[10rem] px-[2rem] md:pt-[13rem] pb-[3rem]">
+  <>
+    <div className="min-h-screen bg-black pt-[10rem] px-[2rem] md:pt-[13rem] pb-[7rem]">
     <div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20">
       
       {/* Image Section */}
@@ -19,7 +22,7 @@ function AboutMe() {
       </section>
 
       {/* Text Section */}
-      <section className="w-full lg:max-w-4xl md:max-w-5xl flex flex-col gap-4 ">
+      <section className="w-full lg:max-w-5xl md:max-w-5xl flex flex-col gap-4 ">
         <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary text-center">
           About Me
         </h1>
@@ -42,15 +45,19 @@ function AboutMe() {
             <h4 className="text-xl font-bold text-primary mb-2">Favourite Quote</h4>
             <p className="italic">"Dream big, code bigger."</p>
           </div>
-
-           <div className="bg-primary/10 p-5 rounded-lg shadow-md flex-1 text-center">
-            <h4 className="text-xl font-bold text-primary mb-2">Fun Fact</h4>
-            <p>I once coded for 12 hours straight without realizing the time! (The flow was too good to stop!)</p>
-          </div> 
+          
         </div>
       </section>
+
+     
     </div>
+{/* Skillset */}
+        <Skills />
+
+        
     </div>
+    <Footer bg="bg-black"/>
+    </>
   );
 }
 
