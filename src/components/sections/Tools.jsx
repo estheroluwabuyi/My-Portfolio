@@ -68,7 +68,6 @@ const toolsList = [
 
 function Tools() {
   const [active, setActive] = useState(null);
-
   
 
   return (
@@ -99,9 +98,9 @@ function Tools() {
                 src={tool.img}
                 alt={tool.title}
                 className={clsx(
-                  "w-16 h-16 mb-2 transition duration-600 ease",
+                 "w-16 h-16 mb-2 transition-transform duration-300 ease-in-out transform-gpu touch-transform",
                   index === 4 && "bg-primary rounded-[100%] border",
-                active === index && "scale-95 rotate-[360deg]"
+                  active === index && "-scale-[1] rotate-180"
                 )}
               />
               {/* scale(-1) rotate(180deg) */}

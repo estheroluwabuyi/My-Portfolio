@@ -62,6 +62,13 @@ a {
   background-color: rgba(240, 238, 228);
   color: var(--light-black);
 }
+
+/* Touch devices */
+@media (hover: none) {
+  .touch-transform {
+    transition-duration: 200ms;
+  }
+}
 /* /* --breakpoint-*:initial;
     --breakpoint-sm: 480px;
     --breakpoint: 768px;
