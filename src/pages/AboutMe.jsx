@@ -2,7 +2,7 @@ import { useState } from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
-import Skills from "../components/sections/Tools.jsx";
+import Tools from "../components/sections/Tools.jsx";
 import Footer from "../components/sections/Footer.jsx";
 import Esther from "/images/About-1.webp";
 
@@ -73,7 +73,7 @@ function AboutMe() {
             </section>
           </div>
 
-          <Skills />
+          <Tools />
         </motion.div>
       </div>
       <Footer bg="bg-black" />
