@@ -91,9 +91,9 @@ function Tools() {
                 active === index && "bg-primary/20 scale-97"
               )}
               onMouseOver={() => setActive(index)}
-              // onMouseLeave={() => setActive(null)}
+              onMouseLeave={() => setActive(null)}
               onTouchStart={() => setActive(index)}
-              // onTouchEnd={() => setActive(null)}
+              onTouchEnd={() => setActive(null)}
             >
               <img
                 src={tool.img}
