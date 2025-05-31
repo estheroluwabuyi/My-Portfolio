@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 import Footer from "../components/sections/Footer";
 import { FaEnvelope } from "react-icons/fa";
@@ -7,7 +8,6 @@ import { FiArrowDown } from "react-icons/fi";
 import { RiCheckLine } from "react-icons/ri";
 import { FiAlertCircle } from "react-icons/fi";
 
-import { motion } from "framer-motion";
 
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -57,7 +57,6 @@ function Contact() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.5, ease: "easeOut" }}
-          
           className=" w-full bg-secondary border border-primary/20 rounded-xl py-15 px-7 sm:px-10 lg:px-20 md:max-w-6xl mx-auto"
         >
           <h2 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary mb-4 text-center">
@@ -116,7 +115,7 @@ function Contact() {
             ></textarea>
             <button
               type="submit"
-              className="w-full mt-5 h-[5rem] bg-primary text-secondary hover:bg-primary/90 text-primary py-3 rounded-lg transition duration-300 font-semibold text-[1.35rem] flex items-center justify-center font-poppins hover:scale-105 active:scale-95 disabled:opacity-50"
+              className="w-full mt-5 h-[5rem] bg-primary text-secondary hover:bg-primary/90 py-3 rounded-lg transition duration-300 font-semibold text-[1.35rem] flex items-center justify-center font-poppins hover:scale-105 active:scale-95 disabled:opacity-50"
               style={
                 isPopupOpen ||
                 loading ||
