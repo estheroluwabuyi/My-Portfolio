@@ -69,6 +69,12 @@ const toolsList = [
 function Tools() {
   const [active, setActive] = useState(null);
 
+  const handleActive = (i)=>{
+    setTimeout(() => {
+      setActive(i)
+    }, 100);
+  }
+
   return (
     <section className="pt-[3rem]  bg-black text-primary">
       <div className=" mx-auto px-4">
@@ -88,10 +94,10 @@ function Tools() {
                 "flex flex-col items-center text-center p-4 bg-primary/10 rounded-lg active:shadow-lg  transition duration-600 ease-in-out backdrop-blur-md",
                 active === index && "bg-primary/20 scale-97"
               )}
-              onMouseOver={() => setActive(index)}
-              onMouseLeave={() => setActive(null)}
-              onTouchStart={() => setActive(index)}
-              onTouchEnd={() => setActive(null)}
+              onMouseOver={() => handleActive(index)}
+              onMouseLeave={() => handleActive(null)}
+              onTouchStart={() => handleActive(index)}
+              onTouchEnd={() => handleActive(null)}
             >
               <img
                 src={tool.img}
