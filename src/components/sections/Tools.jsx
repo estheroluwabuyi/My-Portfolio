@@ -1,6 +1,5 @@
 import { useState } from "react";
 import clsx from "clsx";
-import { motion } from "framer-motion";
 
 import html from "/images/tools-icons/html-svgrepo-com.svg";
 import css from "/images/tools-icons/css-3-svgrepo-com.svg";
@@ -75,19 +74,13 @@ function Tools() {
       <div className=" mx-auto px-4">
         <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary mb-4 text-center">
           Essential Tools I Use
-        </h1>
+        </h1> 
         <p className="text-center mb-8 max-w-3xl mx-auto">
           As a Frontend Developer, I rely on a variety of tools to streamline my
           workflow and enhance productivity. Here are some of the essential
           tools I use:
         </p>
-        <motion.ul
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ delay: 0.2, duration: 1 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
-        >
+        <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {toolsList.map((tool, index) => (
             <li
               key={index}
@@ -114,7 +107,7 @@ function Tools() {
               <p className="text-[1.05rem] text-gray-300">{tool.subtitle}</p>
             </li>
           ))}
-        </motion.ul>
+        </ul>
       </div>
     </section>
   );
