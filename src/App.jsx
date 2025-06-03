@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { AnimatePresence } from "framer-motion";
+
+
+import ScrollToTop from "./components/ScrollToTop";
+
 import HomePage from "./pages/HomePage";
 import Projects from "./pages/Projects";
 import AboutMe from "./pages/AboutMe";
@@ -25,6 +30,7 @@ function App() {
 
       {isLoaded && (
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<HomePage />} />

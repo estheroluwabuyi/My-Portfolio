@@ -19,14 +19,15 @@ const projects = [
     title: "TalentsNCrowns",
     img: talentsncrowns,
     subtitle:
-      "A job matching platform that connects job seekers with employers in creative industries",
+      "A job matching platform that connects job seekers with employers in creative industries.",
     github: "https://github.com/archsaintnexus/talent-n-crowns-client",
     live: "https://talentncrowns.vercel.app/",
   },
   {
     title: "Grilli",
     img: grilli,
-    subtitle: "A modern food website with interactive and a stylish layout",
+    subtitle:
+      "A modern food website with interactive features, responsive design, and a stylish layout.",
     github: "https://github.com/estheroluwabuyi/Grilli-Website",
     live: "https://grilli-restaurant-thecodegal.netlify.app/",
   },
@@ -34,7 +35,7 @@ const projects = [
     title: "CyberPosture",
     img: cyberposture,
     subtitle:
-      "A responsive landing page showcasing cybersecurity services and solutions",
+      "A responsive landing page showcasing cybersecurity services and solutions.",
     github: "https://github.com/estheroluwabuyi/cyberposture--v2",
     live: "https://cyberposture-the-code-gal.netlify.app/",
   },
@@ -43,7 +44,7 @@ const projects = [
     title: "Portfolio",
     img: portfolio,
     subtitle:
-      "My personal portfolio to showcase my projects and skills as a developer",
+      "My personal portfolio to highlight my projects, skills, and frontend experiences.",
     github: "https://github.com/estheroluwabuyi/My-Portfolio",
     live: "https://esther-oluwabuyi-portfolio.vercel.app/",
   },
@@ -51,7 +52,7 @@ const projects = [
     title: "CountryFinder",
     img: countryFinder,
     subtitle:
-      "A simple web app to search for countries and view useful details",
+      "A simple web app to search for countries and view key informations like population, capital, and flag.",
     github: "https://github.com/estheroluwabuyi/CountryFinder",
     live: "https://countryfinder-the-code-gal.netlify.app/",
   },
@@ -59,7 +60,7 @@ const projects = [
     title: "Todo List",
     img: todolist,
     subtitle:
-      "A task manager with features to add, edit, group, and filter tasks by completion status",
+      "A task manager to add, edit, delete, and filter tasks by completion status — with data stored in local storage.",
     github: "https://github.com/estheroluwabuyi/TodoList-App",
     live: "https://todo-list-app-thecodegal-estheroluwabuyis-projects.vercel.app/",
   },
@@ -83,15 +84,13 @@ function Projects() {
             {projects.map((project, index) => (
               <li
                 key={index}
-                className=" bg-secondary shadow-lg text-primary border border-primary/5 rounded-xl p-6 flex flex-col gap-5"
+                className=" bg-secondary shadow-lg text-primary border border-primary/5 rounded-xl p-6 flex flex-col gap-5  transition-transform duration-600 ease-in-out"
+                onMouseOver={() => setActive(index)}
+                onMouseLeave={() => setActive(null)}
+                onTouchStart={() => setActive(index)}
+                onTouchEnd={() => setActive(null)}
               >
-                <div
-                  className=" overflow-hidden rounded-lg mb-4 border border-primary/20 "
-                  onMouseOver={() => setActive(index)}
-                  onMouseLeave={() => setActive(null)}
-                  onTouchStart={() => setActive(index)}
-                  onTouchEnd={() => setActive(null)}
-                >
+                <div className=" overflow-hidden rounded-lg mb-4 border border-primary/20 ">
                   <img
                     src={project.img}
                     alt={project.title}
