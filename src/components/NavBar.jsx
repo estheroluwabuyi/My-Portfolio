@@ -50,11 +50,7 @@ function NavBar() {
         scrolled ? "bg-secondary/30 backdrop-blur-md border-b border-white/10" : "bg-transparent"
       }`}
     > 
-     {/* <nav
-      className={`fixed top-0 left-0 z-150 w-full px-[2rem] py-[1rem] md:py-[2rem] flex justify-between items-center md:justify-around font-poppins transition-colors duration-300 bg-secondary/30 backdrop-blur-md border-b border-white/10 ${
-        scrolled ? "" : "bg-transparent"
-      }`}
-    > */}
+   
       <div className="text-[3rem] md:text-[4rem] font-great-vibes font-semibold tracking-wide">
         <Link to="/">Esther.</Link>
       </div>
@@ -72,9 +68,9 @@ function NavBar() {
                 src={closeIcon}
                 alt="close menu"
                 className="w-full h-full "
-                initial={{ opacity: 0, rotate: 90 }}
-                animate={{ opacity: 1, rotate: 0 }}
-                exit={{ opacity: 0, rotate: -90 }}
+                initial={{  rotate: 90 }}
+                animate={{  rotate: 0 }}
+                exit={{  rotate: -90 }}
                 transition={{ duration: 0.3 }}
               />
             ) : (
@@ -112,7 +108,7 @@ function NavBar() {
                     {text}
                   </NavLink>
                 ))}
-              </motion.div>{" "}
+              </motion.div>
             </div>
           )}
         </AnimatePresence>
