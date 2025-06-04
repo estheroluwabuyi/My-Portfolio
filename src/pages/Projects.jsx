@@ -19,50 +19,56 @@ const projects = [
     title: "TalentsNCrowns",
     img: talentsncrowns,
     subtitle:
-      "A job matching platform that connects job seekers with employers in creative industries.",
+      "A modern job matching platform connecting talented creatives with employers, featuring user profiles, job listings, and seamless application processes.",
     github: "https://github.com/archsaintnexus/talent-n-crowns-client",
     live: "https://talentncrowns.vercel.app/",
+    stack: "Next.js, TypeScript, CSS Modules, Tailwind CSS, REST API"
   },
   {
     title: "Grilli",
     img: grilli,
     subtitle:
-      "A modern food website with interactive features, responsive design, and a stylish layout.",
+      "A modern restaurant website featuring an interactive menu, responsive design, and smooth user experience to explore dishes and view reservation options.",
     github: "https://github.com/estheroluwabuyi/Grilli-Website",
     live: "https://grilli-restaurant-thecodegal.netlify.app/",
+    stack:"HTML, CSS, JavaScript"
   },
   {
     title: "CyberPosture",
     img: cyberposture,
     subtitle:
-      "A responsive landing page showcasing cybersecurity services and solutions.",
+      "A clean, responsive landing page that highlights cybersecurity services, featuring clear CTAs and modern design to boost client trust.",
     github: "https://github.com/estheroluwabuyi/cyberposture--v2",
     live: "https://cyberposture-the-code-gal.netlify.app/",
+    stack:"React, JavaScript, CSS"
   },
 
   {
-    title: "Portfolio",
+    title: "Portfolio Website",
     img: portfolio,
     subtitle:
-      "My personal portfolio to highlight my projects, skills, and frontend experiences.",
+      "A personal portfolio showcasing my web development projects, skills, and contact options, designed for a clean and engaging experience.",
     github: "https://github.com/estheroluwabuyi/My-Portfolio",
     live: "https://esther-oluwabuyi-portfolio.vercel.app/",
+    stack:"React, JavaScript, Tailwind CSS, Framer Motion"
   },
   {
     title: "CountryFinder",
     img: countryFinder,
     subtitle:
-      "A simple web app to search for countries and view key informations like population, capital, and flag.",
+      "A user-friendly web app to search and explore countries, displaying key info like population, official language, capital, continent, and flag.",
     github: "https://github.com/estheroluwabuyi/CountryFinder",
     live: "https://countryfinder-the-code-gal.netlify.app/",
+    stack: "HTML, CSS, JavaScript, REST API"
   },
   {
     title: "Todo List",
     img: todolist,
     subtitle:
-      "A task manager to add, edit, delete, and filter tasks by completion status — with data stored in local storage.",
+      "A todo list app that lets users add, edit, and delete tasks, with filtering options for completed and pending tasks. It stores data in local storage.",
     github: "https://github.com/estheroluwabuyi/TodoList-App",
     live: "https://todo-list-app-thecodegal-estheroluwabuyis-projects.vercel.app/",
+    stack:"React, JavaScript, CSS, LocalStaorage"
   },
 ];
 
@@ -116,7 +122,12 @@ function Projects() {
                   </p>
                 </div>
 
-                <div className="flex text-[2rem] md:text-[2.5rem] items-center justify-center gap-[2rem] mt-5">
+                <div  className="text-center mt-3 ">
+                
+                  <p className="text-base md:text-[1.2rem]"><span className="font-medium  mr-2.5">Tech Stack:</span><span className="text-primary/80">{project.stack}</span> </p>
+                </div>
+
+                <div className="flex text-[2rem] md:text-[2.5rem] items-center justify-center gap-[2rem] mt-3">
                   <motion.a
                     href={project.github}
                     target="_blank"
