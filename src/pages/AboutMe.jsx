@@ -18,7 +18,7 @@ function AboutMe() {
           transition={{ duration: 1.1, delay: 0.5, ease: "easeOut" }}
         >
           <div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-20">
-            {/* Image Section */}
+            {/* Image Section }
             <section className="lg:self-end p-2 w-full md:w-3/4 lg:w-1/2 max-w-[400px] mb-10 shrink-0">
               <img
                 src={Esther}
@@ -29,7 +29,7 @@ function AboutMe() {
                 loading="eager"
                 decoding="async"
               />
-            </section>
+            </section>*/
 
             {/* Text Section */}
             <section className="w-full lg:max-w-5xl md:max-w-5xl flex flex-col gap-4 ">
