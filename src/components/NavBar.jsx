@@ -72,6 +72,8 @@ function NavBar() {
                 animate={{  rotate: 0 }}
                 exit={{  rotate: -90 }}
                 transition={{ duration: 0.3 }}
+                loading="eager"
+
               />
             ) : (
               <motion.img
@@ -83,6 +85,7 @@ function NavBar() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0.5 }}
                 transition={{ duration: 0.3 }}
+                loading="eager"
               />
             )}
           </AnimatePresence>
