@@ -7,12 +7,12 @@ import Footer from "../components/sections/Footer";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
-import cyberposture from "/images/projects/cyberposture.png";
-import talentsncrowns from "/images/projects/talenntsncrowns.png";
-import grilli from "/images/projects/grilli.png";
-import portfolio from "/images/projects/portfolio.png";
-import todolist from "/images/projects/todolist.png";
-import countryFinder from "/images/projects/countryfinder.png";
+import cyberposture from "/images/projects/cyberposture.webp";
+import talentsncrowns from "/images/projects/talenntsncrowns.webp";
+import grilli from "/images/projects/grilli.webp";
+import portfolio from "/images/projects/portfolio.webp";
+import todolist from "/images/projects/todolist.webp";
+import countryFinder from "/images/projects/countryfinder.webp";
 
 const projects = [
   {
@@ -84,7 +84,12 @@ function Projects() {
             {projects.map((project, index) => (
               <li
                 key={index}
-                className=" bg-secondary shadow-lg text-primary border border-primary/5 rounded-xl p-6 flex flex-col gap-5  transition-transform duration-600 ease-in-out"
+                className={clsx(
+                  "bg-secondary shadow-lg text-primary border border-primary/5 rounded-xl p-6 flex flex-col gap-5 transition-all duration-1000 ease-in-out",
+                  {
+                    "!bg-primary/10": active === index,
+                  }
+                )}
                 onMouseOver={() => setActive(index)}
                 onMouseLeave={() => setActive(null)}
                 onTouchStart={() => setActive(index)}
@@ -95,9 +100,9 @@ function Projects() {
                     src={project.img}
                     alt={project.title}
                     width={300}
-                    height={300}
+                    height={180}
                     className={clsx(
-                      "w-full h-auto  object-cover transition-transform duration-600 ease-in-out",
+                      "w-full h-auto  object-cover transition-all duration-3000 ease-in-out",
                       {
                         "scale-105": active === index,
                       }
@@ -112,20 +117,28 @@ function Projects() {
                 </div>
 
                 <div className="flex text-[2rem] md:text-[2.5rem] items-center justify-center gap-[2rem] mt-5">
-                  <a
+                  <motion.a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2, opacity: 1 }}
+                    initial={{ opacity: 0.7 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="mr-4"
                   >
                     <FaGithub title="GitHub Code" />
-                  </a>
-                  <a
+                  </motion.a>
+
+                  <motion.a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2, opacity: 1 }}
+                    initial={{ opacity: 0.6 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                   >
                     <FiExternalLink title="Live Demo" />
-                  </a>
+                  </motion.a>
                 </div>
               </li>
             ))}
@@ -139,22 +152,4 @@ function Projects() {
 
 export default Projects;
 
-/*
-https://talentncrowns.vercel.app/
-https://github.com/archsaintnexus/talent-n-crowns-client
 
-https://cyberposture-the-code-gal.netlify.app/
-https://github.com/estheroluwabuyi/cyberposture--v2
-
-https://grilli-restaurant-thecodegal.netlify.app/
-https://github.com/estheroluwabuyi/Grilli-Website
-
-https://todo-list-app-thecodegal-estheroluwabuyis-projects.vercel.app/
-https://github.com/estheroluwabuyi/TodoList-App
-
-https://esther-oluwabuyi-portfolio.vercel.app/
-https://github.com/estheroluwabuyi/My-Portfolio
-
-https://countryfinder-the-code-gal.netlify.app/
-https://github.com/estheroluwabuyi/CountryFinder
- */

@@ -8,7 +8,6 @@ import { FiArrowDown } from "react-icons/fi";
 import { RiCheckLine } from "react-icons/ri";
 import { FiAlertCircle } from "react-icons/fi";
 
-
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState({ success: null });

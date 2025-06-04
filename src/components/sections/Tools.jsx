@@ -85,7 +85,7 @@ function Tools() {
             <li
               key={index}
               className={clsx(
-                "flex flex-col items-center text-center p-4 bg-primary/10 rounded-lg active:shadow-lg  transition duration-600 ease-in-out backdrop-blur-md",
+                "flex flex-col items-center text-center p-4 bg-primary/10 rounded-lg active:shadow-lg  transition duration-800 ease-in-out backdrop-blur-md",
                 active === index && "bg-primary/20 scale-97"
               )}
               onMouseOver={() => setActive(index)}
@@ -97,7 +97,7 @@ function Tools() {
                 src={tool.img}
                 alt={tool.title}
                 className={clsx(
-                  "w-16 h-16 mb-2 transition duration-600 ease",
+                  "w-16 h-16 mb-2 transition duration-1000 ease",
                   index === 4 && "bg-primary rounded-[100%] border",
                   active === index && "scale-110"
                 )}
