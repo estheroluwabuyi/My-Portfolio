@@ -85,9 +85,9 @@ function Projects() {
               <li
                 key={index}
                 className={clsx(
-                  "bg-secondary shadow-lg text-primary border border-primary/5 rounded-xl p-6 flex flex-col gap-5 transition-all duration-1000 ease-in-out",
+                  "bg-primary/10 shadow-lg text-primary border border-primary/5 rounded-xl p-6 flex flex-col gap-5 transition-all duration-1000 ease-in-out",
                   {
-                    "!bg-primary/10": active === index,
+                    "!bg-primary/15": active === index,
                   }
                 )}
                 onMouseOver={() => setActive(index)}
@@ -122,7 +122,7 @@ function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.2, opacity: 1 }}
-                    initial={{ opacity: 0.7 }}
+                    initial={{ opacity: 0.85 }}
                     transition={{ type: "spring", stiffness: 300 }}
                     className="mr-4"
                   >
@@ -134,7 +134,7 @@ function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.2, opacity: 1 }}
-                    initial={{ opacity: 0.6 }}
+                    initial={{ opacity: 0.85 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
                     <FiExternalLink title="Live Demo" />
