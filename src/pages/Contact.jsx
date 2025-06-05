@@ -27,8 +27,8 @@ function Contact() {
     const publicKey = "vgngdXI1vHXskv64I";
 
     const templateParams = {
-      from_name: form.name,
-      from_email: form.email,
+      name: form.name,
+      email: form.email,
       message: form.message,
     };
 
@@ -37,6 +37,8 @@ function Contact() {
         setStatus({ success: true });
         setForm({ name: "", email: "", message: "" });
         setLoading(false);
+
+        console.log(form);
       },
       (error) => {
         setStatus({ success: false });
