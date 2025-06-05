@@ -30,7 +30,7 @@ Built to showcase my frontend development skills, design taste, and personal pro
 
 ## 📷 Screenshots
 
-![landing-page](/images/projects/portfolio.webp)
+![landing-page](/landingpage.png)
 
 ---
 
