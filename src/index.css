@@ -4,18 +4,20 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-poppins: "Poppins", sans-serif;
-  --font-bulgatti: "Bulgatti", cursive;
+  --font-bulgatti: "Bulgatti", "Segoe Script", "Lucida Handwriting", cursive;
   --font-great-vibes: "Great Vibes", cursive;
   --color-primary: #f0eee4;
   --color-secondary: #0c0c0c;
 }
 
 @font-face {
-  font-family: "Bulgatti";
-  src: url("./assets/fonts/Bulgatti.otf") format("opentype");
+  font-family: 'Bulgatti';
+  src: url('/fonts/Bulgatti.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 
 :root {
   --primary-font: "Inter", sans-serif;
