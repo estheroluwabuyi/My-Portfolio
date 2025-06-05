@@ -46,12 +46,12 @@ function NavBar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 z-150 w-full px-[2rem] py-[1rem] md:py-[2rem] flex justify-between items-center md:justify-around font-poppins transition-colors duration-300 ${
+      className={`fixed top-0 left-0 z-150 w-full px-[2rem] py-[1.5rem] md:py-[2rem] flex justify-between items-center md:justify-around font-poppins transition-colors duration-300 ${
         scrolled ? "bg-secondary/30 backdrop-blur-md border-b border-white/10" : "bg-transparent"
       }`}
     > 
    
-      <div className="text-[3rem] md:text-[4rem] font-great-vibes font-semibold tracking-wide">
+      <div className="text-[2.5rem] md:text-[3.5rem] font-bulgatti font-semibold tracking-wide">
         <Link to="/">Esther.</Link>
       </div>
 

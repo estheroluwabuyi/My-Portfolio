@@ -31,6 +31,8 @@ function AboutMe() {
               />
             </section>
 
+        
+
             {/* Text Section */}
             <section className="w-full lg:max-w-5xl md:max-w-5xl flex flex-col gap-4 ">
               <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary text-center">

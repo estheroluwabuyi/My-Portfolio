@@ -4,9 +4,17 @@
 @theme {
   --font-inter: "Inter", sans-serif;
   --font-poppins: "Poppins", sans-serif;
+  --font-bulgatti: "Bulgatti", cursive;
   --font-great-vibes: "Great Vibes", cursive;
-  --color-primary:#f0eee4 ;
+  --color-primary: #f0eee4;
   --color-secondary: #0c0c0c;
+}
+
+@font-face {
+  font-family: "Bulgatti";
+  src: url("./assets/fonts/Bulgatti.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
@@ -29,7 +37,6 @@ textarea:-webkit-autofill {
   transition-delay: 9999s !important;
   transition-property: background-color, color !important;
 }
-
 
 body {
   font-size: 1.3rem;
