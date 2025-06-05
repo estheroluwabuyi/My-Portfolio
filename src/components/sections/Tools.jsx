@@ -13,7 +13,6 @@ import vite from "/images/tools-icons/vite-svgrepo-com.svg";
 import restApi from "/images/tools-icons/rest-api-icon.svg";
 import vscode from "/images/tools-icons/vscode-svgrepo-com.svg";
 
-
 const toolsList = [
   {
     title: "HTML",
@@ -93,10 +92,10 @@ function Tools() {
               className={clsx(
                 "flex flex-col items-center text-center p-4 bg-primary/10 rounded-lg active:shadow-lg transition duration-800 ease-in-out backdrop-blur-md",
                 active === index && "bg-primary/20 scale-97",
-                // Adjust width for different screen sizes
-                "w-[calc(50%-12px)]", // 2 columns (minus gap)
-                "md:w-[calc(33.333%-16px)]", // 3 columns
-                "lg:w-[calc(20%-19.2px)]" // 5 columns
+
+                "w-[calc(50%-12px)]",
+                "md:w-[calc(33.333%-16px)]",
+                "lg:w-[calc(20%-19.2px)]"
               )}
               onMouseOver={() => setActive(index)}
               onMouseLeave={() => setActive(null)}
@@ -108,7 +107,8 @@ function Tools() {
                 alt={tool.title}
                 className={clsx(
                   "w-16 h-16 mb-2 transition duration-1000 ease",
-                  (index === 4 || index === 7) && "bg-primary rounded-[100%] border",
+                  (index === 4 || index === 7) &&
+                    "bg-primary rounded-[100%] border",
                   active === index && "scale-110"
                 )}
               />
