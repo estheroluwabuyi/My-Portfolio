@@ -12,7 +12,6 @@ Built to showcase my frontend development skills, design taste, and personal pro
 - ⚛️ Built with **React.js**
 - 🎨 Clean and minimalistic design
 - 💬 Integrated **EmailJS** contact form
-- 🌙 Dark theme
 - 💻 Fully responsive across devices
 - 📁 Projects section to showcase my work
 
