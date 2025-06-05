@@ -13,7 +13,6 @@ import vite from "/images/tools-icons/vite-svgrepo-com.svg";
 import restApi from "/images/tools-icons/rest-api-icon.svg";
 import vscode from "/images/tools-icons/vscode-svgrepo-com.svg";
 
-// rest-api-icon.svg
 
 const toolsList = [
   {
@@ -87,13 +86,17 @@ function Tools() {
           workflow and enhance productivity. Here are some of the essential
           tools I use:
         </p>
-        <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {toolsList.map((tool, index) => (
-            <li
+            <div
               key={index}
               className={clsx(
-                "flex flex-col items-center text-center p-4 bg-primary/10 rounded-lg active:shadow-lg  transition duration-800 ease-in-out backdrop-blur-md",
-                active === index && "bg-primary/20 scale-97"
+                "flex flex-col items-center text-center p-4 bg-primary/10 rounded-lg active:shadow-lg transition duration-800 ease-in-out backdrop-blur-md",
+                active === index && "bg-primary/20 scale-97",
+                // Adjust width for different screen sizes
+                "w-[calc(50%-12px)]", // 2 columns (minus gap)
+                "md:w-[calc(33.333%-16px)]", // 3 columns
+                "lg:w-[calc(20%-19.2px)]" // 5 columns
               )}
               onMouseOver={() => setActive(index)}
               onMouseLeave={() => setActive(null)}
@@ -109,12 +112,11 @@ function Tools() {
                   active === index && "scale-110"
                 )}
               />
-              {/* scale(-1) rotate(180deg) */}
               <h2 className="font-bold">{tool.title}</h2>
               <p className="text-[1.05rem] text-gray-300">{tool.subtitle}</p>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
