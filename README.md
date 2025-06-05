@@ -1,12 +1,51 @@
-# React + Vite
+# 🌐 Esther Oluwabuyi — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!  
+Built to showcase my frontend development skills, design taste, and personal projects.
 
-Currently, two official plugins are available:
+🔗 [Visit Portfolio](https://esther-oluwabuyi-portfolio.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ Built with **React.js**
+- 🎨 Clean and minimalistic design
+- 💬 Integrated **EmailJS** contact form
+- 🌙 Dark theme
+- 💻 Fully responsive across devices
+- 📁 Projects section to showcase my work
+
+---
+
+## 🚀 Tech Stack
+
+- **React.js**
+- **Framer Motion** (for animations)
+- **EmailJS** (for contact form)
+- **Tailwind CSS** (or custom CSS, depending on your setup)
+- **Vite** (for fast development experience)
+
+---
+
+## 📷 Screenshots
+
+_Add a few screenshots here, especially the homepage and mobile view if available._
+
+---
+
+## 📫 Contact
+
+Feel free to reach out through the contact form on the site or connect with me on [LinkedIn](https://www.linkedin.com/in/esther-oluwabuyi/).
+
+---
+
+## 🛠️ Running Locally
+
+If you'd like to run this project locally:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
