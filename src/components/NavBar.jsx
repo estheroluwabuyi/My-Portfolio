@@ -51,7 +51,7 @@ function NavBar() {
       }`}
     > 
    
-      <div className="text-[2.5rem] md:text-[3.5rem] font-bulgatti font-semibold tracking-wide">
+      <div className="text-[2rem] md:text-[3rem] font-bulgatti font-semibold tracking-wide">
         <Link to="/">Esther.</Link>
       </div>
 
