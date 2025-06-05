@@ -1,7 +1,7 @@
 # 🌐 Esther Oluwabuyi — Portfolio
 
 Welcome to my personal portfolio website!  
-Built to showcase my frontend development skills, design taste, and personal projects.
+Built to showcase my frontend development skills, and personal projects.
 
 🔗 [Visit Portfolio](https://esther-oluwabuyi-portfolio.vercel.app)
 
@@ -13,6 +13,7 @@ Built to showcase my frontend development skills, design taste, and personal pro
 - 🎨 Clean and minimalistic design
 - 💬 Integrated **EmailJS** contact form
 - 💻 Fully responsive across devices
+- 🌙 Dark Theme
 - 📁 Projects section to showcase my work
 
 ---
@@ -20,6 +21,7 @@ Built to showcase my frontend development skills, design taste, and personal pro
 ## 🚀 Tech Stack
 
 - **React.js**
+- **JavaScript**
 - **Framer Motion** (for animations)
 - **EmailJS** (for contact form)
 - **Tailwind CSS** (or custom CSS, depending on your setup)
