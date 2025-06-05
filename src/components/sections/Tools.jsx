@@ -92,7 +92,6 @@ function Tools() {
               className={clsx(
                 "flex flex-col items-center text-center p-4 bg-primary/10 rounded-lg active:shadow-lg transition duration-800 ease-in-out backdrop-blur-md",
                 active === index && "bg-primary/20 scale-97",
-
                 "w-[calc(50%-12px)]",
                 "md:w-[calc(33.333%-16px)]",
                 "lg:w-[calc(20%-19.2px)]"
