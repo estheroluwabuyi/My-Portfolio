@@ -37,7 +37,7 @@ Built to showcase my frontend development skills, and personal projects.
 
 ## 📫 Contact
 
-Feel free to reach out through the contact form on the site or connect with me on [LinkedIn](https://www.linkedin.com/in/esther-oluwabuyi/).
+Feel free to reach out through the contact form on the site or connect with me on [LinkedIn](https://www.linkedin.com/in/esther-oluwabuyi-838651234/).
 
 ---
 
