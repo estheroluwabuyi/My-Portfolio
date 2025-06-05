@@ -10,8 +10,10 @@ import ts from "/images/tools-icons/typescript-official-svgrepo-com.svg";
 import tailwind from "/images/tools-icons/tailwind-svgrepo-com.svg";
 import git from "/images/tools-icons/git-svgrepo-com.svg";
 import vite from "/images/tools-icons/vite-svgrepo-com.svg";
-import figma from "/images/tools-icons/figma-svgrepo-com.svg";
+import restApi from "/images/tools-icons/rest-api-icon.svg";
 import vscode from "/images/tools-icons/vscode-svgrepo-com.svg";
+
+// rest-api-icon.svg
 
 const toolsList = [
   {
@@ -50,6 +52,11 @@ const toolsList = [
     subtitle: "Utility-first, responsive styling",
   },
   {
+    title: "REST API",
+    img: restApi,
+    subtitle: "Fetching and interacting with external data",
+  },
+  {
     title: "Git & Github",
     img: git,
     subtitle: "Version control and collaboration",
@@ -74,7 +81,7 @@ function Tools() {
       <div className=" mx-auto px-4">
         <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary mb-4 text-center">
           Essential Tools I Use
-        </h1> 
+        </h1>
         <p className="text-center mb-8 max-w-3xl mx-auto">
           As a Frontend Developer, I rely on a variety of tools to streamline my
           workflow and enhance productivity. Here are some of the essential
@@ -98,7 +105,7 @@ function Tools() {
                 alt={tool.title}
                 className={clsx(
                   "w-16 h-16 mb-2 transition duration-1000 ease",
-                  index === 4 && "bg-primary rounded-[100%] border",
+                  (index === 4 || index === 7) && "bg-primary rounded-[100%] border",
                   active === index && "scale-110"
                 )}
               />
