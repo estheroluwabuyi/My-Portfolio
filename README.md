@@ -30,7 +30,7 @@ Built to showcase my frontend development skills, design taste, and personal pro
 
 ## 📷 Screenshots
 
-_Add a few screenshots here, especially the homepage and mobile view if available._
+![landing-page](/images/projects/portfolio.webp)
 
 ---
 
@@ -49,3 +49,4 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 npm install
 npm run dev
+```
