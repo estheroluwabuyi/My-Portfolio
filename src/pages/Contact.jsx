@@ -22,14 +22,17 @@ function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    const serviceID = "service_5ozdyqs";
-    const templateID = "template_u9a57u4";
+    const serviceID = "service_36a97zh";
+    // const serviceID = "service_5ozdyqs";
+
+    const templateID = "template_jq3e6wo";
     const publicKey = "vgngdXI1vHXskv64I";
 
     const templateParams = {
       name: form.name,
       email: form.email,
       message: form.message,
+      title: "New Contact Form Submission",
     };
 
     emailjs.send(serviceID, templateID, templateParams, publicKey).then(
