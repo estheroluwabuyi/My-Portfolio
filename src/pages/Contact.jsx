@@ -141,9 +141,8 @@ function Contact() {
             </button>
 
             <p className="text-primary md:text-[1.5rem] mt-10 text-center ">
-              You can find me below{" "}
-              <FiArrowDown className=" ml-2 text-primary inline" /> (links in
-              footer)!
+              Let’s stay in touch — my social links are down below
+              <FiArrowDown className=" ml-2 text-primary inline" />
             </p>
 
             {status.success ? (
