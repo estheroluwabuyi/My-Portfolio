@@ -31,8 +31,6 @@ function AboutMe() {
               />
             </section>
 
-        
-
             {/* Text Section */}
             <section className="w-full lg:max-w-5xl md:max-w-5xl flex flex-col gap-4 ">
               <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary text-center">
@@ -41,20 +39,19 @@ function AboutMe() {
 
               <p className="leading-relaxed text-center lg:text-left">
                 Hello! I'm{" "}
-                <span className="font-semibold">Esther Oluwabuyi</span>
-                , a passionate Frontend Developer with over 3 years of
-                experience. I love crafting functional, user-friendly, and
-                visually appealing websites, and I enjoy bringing creative ideas
-                to life in the browser. Watching a project evolve from a basic
-                structure into a dynamic, responsive, and engaging user
-                experience is truly rewarding for me. <br />
-                When I'm not coding, you’ll find me exploring new technologies,
-                journaling my thoughts, dreaming of future travel adventures, or
-                enjoying a good book (I'm a big V.C. Andrews fan!). <br />I
-                believe in continuous learning and always strive to sharpen my
-                skills. I'm excited to connect with like-minded individuals and
-                work on projects that make a real impact. Let's create something
-                amazing together!
+                <span className="font-semibold">Esther Oluwabuyi</span>, — a
+                frontend developer with over 3 years of experience. I enjoy
+                building functional, user-friendly, and visually appealing
+                websites, and I love bringing creative ideas to life in the
+                browser. Seeing a project grow from a basic structure into
+                something dynamic and responsive is always rewarding.
+                <br />
+                When I’m not coding, I’m usually exploring new technologies,
+                journaling, dreaming of travel adventures, or reading (I’m a big
+                V.C. Andrews fan!). <br />I believe in continuous learning and
+                I’m always looking to grow. I enjoy working with others, and I’m
+                excited to connect with people who are building things that
+                matter. Let’s create something great together!
               </p>
 
               <div className="mt-8 flex flex-col md:flex-row gap-8 justify-between text-[1.2rem]">

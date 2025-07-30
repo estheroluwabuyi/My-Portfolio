@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";
 
-
 import ScrollToTop from "./components/ScrollToTop";
 
 import HomePage from "./pages/HomePage";
@@ -24,9 +23,7 @@ function App() {
 
   return (
     <>
-      <AnimatePresence>
-        {!isLoaded && <Preloader key="preloader" />}
-      </AnimatePresence>
+      <AnimatePresence>{!isLoaded && <Preloader key="preloader" />}</AnimatePresence>
 
       {isLoaded && (
         <BrowserRouter>

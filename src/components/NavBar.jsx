@@ -33,7 +33,6 @@ function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   // close nav links when users move to a new page
   useEffect(() => {
     setToggle(false);
@@ -47,10 +46,11 @@ function NavBar() {
   return (
     <nav
       className={`fixed top-0 left-0 z-150 w-full px-[2rem] py-[1.5rem] md:py-[2rem] flex justify-between items-center md:justify-around font-poppins transition-colors duration-300 ${
-        scrolled ? "bg-secondary/30 backdrop-blur-md border-b border-white/10" : "bg-transparent"
+        scrolled
+          ? "bg-secondary/30 backdrop-blur-md border-b border-white/10"
+          : "bg-transparent"
       }`}
-    > 
-   
+    >
       <div className="text-[2rem] md:text-[3rem] font-bulgatti font-semibold tracking-wide">
         <Link to="/">Esther.</Link>
       </div>
@@ -68,12 +68,11 @@ function NavBar() {
                 src={closeIcon}
                 alt="close menu"
                 className="w-full h-full "
-                initial={{  rotate: 90 }}
-                animate={{  rotate: 0 }}
-                exit={{  rotate: -90 }}
+                initial={{ rotate: 90 }}
+                animate={{ rotate: 0 }}
+                exit={{ rotate: -90 }}
                 transition={{ duration: 0.3 }}
                 loading="eager"
-
               />
             ) : (
               <motion.img
