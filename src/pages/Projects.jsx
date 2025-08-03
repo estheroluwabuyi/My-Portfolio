@@ -22,7 +22,7 @@ const projects = [
       "A modern job matching platform connecting talented creatives with employers, featuring user profiles, job listings, and seamless application processes.",
     github: "https://github.com/archsaintnexus/talent-n-crowns-client",
     live: "https://talentncrowns.vercel.app/",
-    stack: "Next.js, TypeScript, CSS Modules, Tailwind CSS, REST API"
+    stack: "Next.js, TypeScript, CSS Modules, Tailwind CSS, REST API",
   },
   {
     title: "Grilli",
@@ -31,7 +31,7 @@ const projects = [
       "A modern restaurant website featuring an interactive menu, responsive design, and smooth user experience to explore dishes and view reservation options.",
     github: "https://github.com/estheroluwabuyi/Grilli-Website",
     live: "https://grilli-restaurant-thecodegal.netlify.app/",
-    stack:"HTML, CSS, JavaScript"
+    stack: "HTML, CSS, JavaScript",
   },
   {
     title: "CyberPosture",
@@ -40,7 +40,7 @@ const projects = [
       "A clean, responsive landing page that highlights cybersecurity services, featuring clear CTAs and modern design to boost client trust.",
     github: "https://github.com/estheroluwabuyi/cyberposture--v2",
     live: "https://cyberposture-the-code-gal.netlify.app/",
-    stack:"React, JavaScript, CSS"
+    stack: "React, JavaScript, CSS",
   },
 
   {
@@ -50,7 +50,7 @@ const projects = [
       "A personal portfolio showcasing my web development projects, skills, and contact options, designed for a clean and engaging experience.",
     github: "https://github.com/estheroluwabuyi/My-Portfolio",
     live: "https://esther-oluwabuyi-portfolio.vercel.app/",
-    stack:"React, JavaScript, Tailwind CSS, Framer Motion"
+    stack: "React, JavaScript, Tailwind CSS, Framer Motion",
   },
   {
     title: "CountryFinder",
@@ -59,7 +59,7 @@ const projects = [
       "A user-friendly web app to search and explore countries, displaying key info like population, official language, capital, continent, and flag.",
     github: "https://github.com/estheroluwabuyi/CountryFinder",
     live: "https://countryfinder-the-code-gal.netlify.app/",
-    stack: "HTML, CSS, JavaScript, REST API"
+    stack: "HTML, CSS, JavaScript, REST API",
   },
   {
     title: "Todo List",
@@ -68,7 +68,7 @@ const projects = [
       "A todo list app that lets users add, edit, and delete tasks, with filtering options for completed and pending tasks. It stores data in local storage.",
     github: "https://github.com/estheroluwabuyi/TodoList-App",
     live: "https://todo-list-app-thecodegal-estheroluwabuyis-projects.vercel.app/",
-    stack:"React, JavaScript, CSS, LocalStaorage"
+    stack: "React, JavaScript, CSS, LocalStaorage",
   },
 ];
 
@@ -93,7 +93,7 @@ function Projects() {
                 className={clsx(
                   "bg-primary/10 shadow-lg text-primary border border-primary/5 rounded-xl p-6 flex flex-col gap-5 transition-all duration-1000 ease-in-out",
                   {
-                    "!bg-primary/15": active === index,
+                    "bg-primary/15!": active === index,
                   }
                 )}
                 onMouseOver={() => setActive(index)}
@@ -122,9 +122,13 @@ function Projects() {
                   </p>
                 </div>
 
-                <div  className="text-center mt-3 ">
-                
-                  <p className="text-base md:text-[1.2rem]"><span className="font-medium  mr-2.5">Tech Stack:</span><span className="text-primary/80">{project.stack}</span> </p>
+                <div className="text-center mt-3 ">
+                  <p className="text-base md:text-[1.2rem]">
+                    <span className="font-medium  mr-2.5">Tech Stack:</span>
+                    <span className="text-primary/80">
+                      {project.stack}
+                    </span>{" "}
+                  </p>
                 </div>
 
                 <div className="flex text-[2rem] md:text-[2.5rem] items-center justify-center gap-[2rem] mt-3">
@@ -162,5 +166,3 @@ function Projects() {
 }
 
 export default Projects;
-
-
