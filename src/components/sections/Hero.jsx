@@ -15,7 +15,7 @@ function Hero() {
   
   const link = document.createElement('a');
   link.href = `${resume}`;
-  link.download = 'Esther_Oluwabuyi_Resume.pdf';
+  link.download = 'Esther Oluwabuyi Resume.pdf';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
