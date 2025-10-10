@@ -11,13 +11,12 @@
 }
 
 @font-face {
-  font-family: 'Bulgatti';
-  src: url('/fonts/Bulgatti.otf') format('truetype');
+  font-family: "Bulgatti";
+  src: url("/fonts/Bulgatti.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
 
 :root {
   --primary-font: "Inter", sans-serif;
@@ -71,9 +70,3 @@ a {
   background-color: rgba(240, 238, 228);
   color: var(--light-black);
 }
-/* /* --breakpoint-*:initial;
-    --breakpoint-sm: 480px;
-    --breakpoint: 768px;
-    /* --breakpoint-lg: 976px; */
-/* --color-twitter-blue: #1DA1F2;
-    --color-orange-500: #ffa500; //overide orange-500  */
