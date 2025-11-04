@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 import cyberposture from "/images/projects/cyberposture.webp";
+import corefit from "/images/projects/corefit.webp";
 import talentsncrowns from "/images/projects/talenntsncrowns.webp";
 import grilli from "/images/projects/grilli.webp";
 import portfolio from "/images/projects/portfolio.webp";
@@ -23,6 +24,16 @@ const projects = [
     github: "https://github.com/archsaintnexus/talent-n-crowns-client",
     live: "https://talentncrowns.vercel.app/",
     stack: "Next.js, TypeScript, CSS Modules, Tailwind CSS, REST API",
+  },
+  {
+    title: "CoreFit",
+    img: corefit,
+    subtitle:
+      "CoreFit is a modern gym website that doubles as an e-commerce platform. It allows users to explore gym equipment, view detailed product descriptions, and add items to their cart. The site also showcases gym programmes and services.",
+    github: "https://github.com/estheroluwabuyi/corefit-gym",
+    live: "https://corefit-gym.vercel.app/",
+    stack:
+      "React, JavaScript, CSS, React Context API, Toast Notifications, Framer Motion",
   },
   {
     title: "Grilli",
@@ -61,15 +72,15 @@ const projects = [
     live: "https://countryfinder-the-code-gal.netlify.app/",
     stack: "HTML, CSS, JavaScript, REST API",
   },
-  {
-    title: "Todo List",
-    img: todolist,
-    subtitle:
-      "A todo list app that lets users add, edit, and delete tasks, with filtering options for completed and pending tasks. It stores data in local storage.",
-    github: "https://github.com/estheroluwabuyi/TodoList-App",
-    live: "https://todo-list-app-thecodegal-estheroluwabuyis-projects.vercel.app/",
-    stack: "React, JavaScript, CSS, LocalStaorage",
-  },
+  // {
+  //   title: "Todo List",
+  //   img: todolist,
+  //   subtitle:
+  //     "A todo list app that lets users add, edit, and delete tasks, with filtering options for completed and pending tasks. It stores data in local storage.",
+  //   github: "https://github.com/estheroluwabuyi/TodoList-App",
+  //   live: "https://todo-list-app-thecodegal-estheroluwabuyis-projects.vercel.app/",
+  //   stack: "React, JavaScript, CSS, LocalStaorage",
+  // },
 ];
 
 function Projects() {
@@ -77,7 +88,7 @@ function Projects() {
 
   return (
     <>
-      <div className="min-h-screen bg-black pt-[10rem] px-[2rem] md:pt-[13rem] pb-[7rem]">
+      <div className="min-h-screen bg-black pt-[10rem] px-[2rem] md:pt-[13rem] pb-[7rem] ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -116,14 +127,16 @@ function Projects() {
                   />
                 </div>
                 <div className="text-center mt-5">
-                  <h3 className="text-[1.5rem] font-medium">{project.title}</h3>
-                  <p className="text-base md:text-[1.2rem] text-primary/80 mt-1">
+                  <h3 className="text-[1.5rem] lg:text-[1.7rem] font-medium">
+                    {project.title}
+                  </h3>
+                  <p className="text-base md:text-[1.2rem] lg:text-[1.3rem] text-primary/80 mt-1">
                     {project.subtitle}
                   </p>
                 </div>
 
                 <div className="text-center mt-3 ">
-                  <p className="text-base md:text-[1.2rem]">
+                  <p className="text-base md:text-[1.2rem] lg:text-[1.3rem]">
                     <span className="font-medium  mr-2.5">Tech Stack:</span>
                     <span className="text-primary/80">
                       {project.stack}

@@ -23,7 +23,6 @@ function Contact() {
     setLoading(true);
 
     const serviceID = "service_36a97zh";
-    // const serviceID = "service_5ozdyqs";
 
     const templateID = "template_jq3e6wo";
     const publicKey = "vgngdXI1vHXskv64I";

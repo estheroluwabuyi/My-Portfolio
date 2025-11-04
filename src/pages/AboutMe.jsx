@@ -37,7 +37,7 @@ function AboutMe() {
                 About Me
               </h1>
 
-              <p className="leading-relaxed text-center lg:text-left">
+              <p className="leading-relaxed text-center lg:text-left lg:text-[1.4rem]">
                 Hello! I'm{" "}
                 <span className="font-semibold">Esther Oluwabuyi</span>, — a
                 frontend developer with over 3 years of experience. I enjoy

@@ -80,7 +80,7 @@ function Tools() {
         <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary mb-4 text-center">
           Essential Tools I Use
         </h1>
-        <p className="text-center mb-8 max-w-3xl mx-auto">
+        <p className="text-center mb-8 max-w-3xl mx-auto lg:text-[1.4rem]">
           As a Frontend Developer, I rely on a variety of tools to streamline my
           workflow and enhance productivity. Here are some of the essential
           tools I use:
@@ -111,8 +111,10 @@ function Tools() {
                   active === index && "scale-110"
                 )}
               />
-              <h2 className="font-bold">{tool.title}</h2>
-              <p className="text-[1.05rem] text-gray-300">{tool.subtitle}</p>
+              <h2 className="font-bold lg:text-[1.5rem]">{tool.title}</h2>
+              <p className="text-[1.05rem] lg:text-[1.3rem] text-gray-300">
+                {tool.subtitle}
+              </p>
             </div>
           ))}
         </div>
