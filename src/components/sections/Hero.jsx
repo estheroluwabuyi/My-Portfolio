@@ -3,23 +3,24 @@ import { Link } from "react-router-dom";
 import LinkedParticles from "../LinkedParticles";
 import Esther from "/images/avatar-esther.webp";
 import { motion } from "framer-motion";
-import resume from "/pdf/Esther_Oluwabuyi_CV.pdf";
+import resume from "/pdf/Esther_Oluwabuyi_Web_Developer.pdf";
 
 function Hero() {
-
   const handleDownloadResume = () => {
-  if (!navigator.onLine) {
-    alert("You’re currently offline. Please connect to the internet to download the resume.");
-    return;
-  }
-  
-  const link = document.createElement('a');
-  link.href = `${resume}`;
-  link.download = 'Esther Oluwabuyi Resume.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+    if (!navigator.onLine) {
+      alert(
+        "You’re currently offline. Please connect to the internet to download the resume.",
+      );
+      return;
+    }
+
+    const link = document.createElement("a");
+    link.href = `${resume}`;
+    link.download = "Esther_Oluwabuyi.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section className="relative z-50 h-screen w-full  pt-[7rem]  md:pt-[10rem]">
@@ -53,18 +54,16 @@ function Hero() {
           </div>
 
           <div className="flex gap-[2.5rem]  mt-6 justify-center">
-            {/* <a href={resume} download> */}
-              <button
+            <button
               onClick={handleDownloadResume}
-                className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold  border transition md:px-10 md:py-5 sm:px-8 sm:py-4 duration-600 ease-in-out
+              className="px-7 py-3.5 bg-primary text-secondary rounded-lg font-semibold  border transition md:px-10 md:py-5 sm:px-8 sm:py-4 duration-600 ease-in-out
               hover:scale-105 active:scale-95
               hover:border-primary active:border-primary
               hover:text-primary active:text-primary
             hover:bg-transparent active:bg-transparent"
-              >
-                View Resume
-              </button>
-            {/* </a> */}
+            >
+              View Resume
+            </button>
 
             <Link to="/projects">
               <button
