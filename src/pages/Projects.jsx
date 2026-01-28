@@ -7,15 +7,23 @@ import Footer from "../components/sections/Footer";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
-import cyberposture from "/images/projects/cyberposture.webp";
+import jobtracker from "/images/projects/job-tracker.webp";
 import corefit from "/images/projects/corefit.webp";
 import talentsncrowns from "/images/projects/talenntsncrowns.webp";
 import grilli from "/images/projects/grilli.webp";
 import portfolio from "/images/projects/portfolio.webp";
-import todolist from "/images/projects/todolist.webp";
 import countryFinder from "/images/projects/countryfinder.webp";
 
 const projects = [
+  {
+    title: "Job Application Tracker",
+    img: jobtracker,
+    subtitle:
+      "A full-stack job application manager with user authentication, cloud database, and filtering. Tracks applications, interviews, offers, and rejections with secure user-specific data storage.",
+    github: "https://github.com/estheroluwabuyi/Job-Tracker",
+    live: "https://job-tracker-thecodegal.vercel.app/",
+    stack: "React, Supabase (PostgreSQL + Auth), Tailwind CSS, Vite, Context API",
+  },
   {
     title: "TalentsNCrowns",
     img: talentsncrowns,
@@ -36,25 +44,6 @@ const projects = [
       "React, JavaScript, CSS, React Context API, Toast Notifications, Framer Motion",
   },
   {
-    title: "Grilli",
-    img: grilli,
-    subtitle:
-      "A modern restaurant website featuring an interactive menu, responsive design, and smooth user experience to explore dishes and view reservation options.",
-    github: "https://github.com/estheroluwabuyi/Grilli-Website",
-    live: "https://grilli-restaurant-thecodegal.netlify.app/",
-    stack: "HTML, CSS, JavaScript",
-  },
-  {
-    title: "CyberPosture",
-    img: cyberposture,
-    subtitle:
-      "A clean, responsive landing page that highlights cybersecurity services, featuring clear CTAs and modern design to boost client trust.",
-    github: "https://github.com/estheroluwabuyi/cyberposture--v2",
-    live: "https://cyberposture-the-code-gal.netlify.app/",
-    stack: "React, JavaScript, CSS",
-  },
-
-  {
     title: "Portfolio Website",
     img: portfolio,
     subtitle:
@@ -72,15 +61,15 @@ const projects = [
     live: "https://countryfinder-the-code-gal.netlify.app/",
     stack: "HTML, CSS, JavaScript, REST API",
   },
-  // {
-  //   title: "Todo List",
-  //   img: todolist,
-  //   subtitle:
-  //     "A todo list app that lets users add, edit, and delete tasks, with filtering options for completed and pending tasks. It stores data in local storage.",
-  //   github: "https://github.com/estheroluwabuyi/TodoList-App",
-  //   live: "https://todo-list-app-thecodegal-estheroluwabuyis-projects.vercel.app/",
-  //   stack: "React, JavaScript, CSS, LocalStaorage",
-  // },
+  {
+    title: "Grilli",
+    img: grilli,
+    subtitle:
+      "A modern restaurant website featuring an interactive menu, responsive design, and smooth user experience to explore dishes and view reservation options.",
+    github: "https://github.com/estheroluwabuyi/Grilli-Website",
+    live: "https://grilli-restaurant-thecodegal.netlify.app/",
+    stack: "HTML, CSS, JavaScript",
+  },
 ];
 
 function Projects() {
