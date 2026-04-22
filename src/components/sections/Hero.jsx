@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import LinkedParticles from "../LinkedParticles";
 import Esther from "/images/avatar-esther.webp";
 import { motion } from "framer-motion";
-import resume from "/pdf/Esther_Oluwabuyi_Web_Developer.pdf";
+import resume from "/pdf/Esther Oluwabuyi — Frontend Developer.pdf";
 
 function Hero() {
   const handleDownloadResume = () => {
