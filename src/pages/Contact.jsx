@@ -45,7 +45,7 @@ function Contact() {
       (error) => {
         setStatus({ success: false });
         setLoading(false);
-      }
+      },
     );
   };
 
@@ -62,7 +62,7 @@ function Contact() {
           transition={{ duration: 1.1, delay: 0.5, ease: "easeOut" }}
           className=" w-full bg-secondary border border-primary/20 rounded-xl py-15 px-7 sm:px-10 lg:px-20 md:max-w-6xl mx-auto"
         >
-          <h2 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary mb-4 text-center">
+          <h2 className="text-[2.5rem] font-poppins md:text-[3rem] font-bold text-primary mb-4 text-center">
             Contact Me
           </h2>
           <p className="text-primary text-[1.25rem] md:text-[1.5rem] mb-15 text-center font-poppins">

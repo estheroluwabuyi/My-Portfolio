@@ -77,7 +77,7 @@ function Tools() {
   return (
     <section className="pt-[3rem]  bg-black text-primary overflow-hidden">
       <div className=" mx-auto px-4">
-        <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary mb-4 text-center">
+        <h1 className="text-[2.5rem] font-poppins md:text-[3rem] font-bold text-primary mb-4 text-center">
           Essential Tools I Use
         </h1>
         <p className="text-center mb-8 max-w-3xl mx-auto lg:text-[1.4rem]">
@@ -94,7 +94,7 @@ function Tools() {
                 active === index && "bg-primary/20 scale-97",
                 "w-[calc(50%-12px)]",
                 "md:w-[calc(33.333%-16px)]",
-                "lg:w-[calc(20%-19.2px)]"
+                "lg:w-[calc(20%-19.2px)]",
               )}
               onMouseOver={() => setActive(index)}
               onMouseLeave={() => setActive(null)}
@@ -108,7 +108,7 @@ function Tools() {
                   "w-16 h-16 mb-2 transition duration-1000 ease",
                   (index === 4 || index === 7) &&
                     "bg-primary rounded-[100%] border",
-                  active === index && "scale-110"
+                  active === index && "scale-110",
                 )}
               />
               <h2 className="font-bold lg:text-[1.5rem]">{tool.title}</h2>

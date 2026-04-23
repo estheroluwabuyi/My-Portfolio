@@ -22,7 +22,8 @@ const projects = [
       "A full-stack job application manager with user authentication, cloud database, and filtering. Tracks applications, interviews, offers, and rejections with secure user-specific data storage.",
     github: "https://github.com/estheroluwabuyi/Job-Tracker",
     live: "https://job-tracker-thecodegal.vercel.app/",
-    stack: "React, Supabase (PostgreSQL + Auth), Tailwind CSS, Vite, Context API",
+    stack:
+      "React, Supabase (PostgreSQL + Auth), Tailwind CSS, Vite, Context API",
   },
   {
     title: "TalentsNCrowns",
@@ -83,7 +84,7 @@ function Projects() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.5, ease: "easeOut" }}
         >
-          <h1 className="text-[2.5rem] font-poppins md:text-[4rem] font-bold text-primary mb-[3rem] text-center">
+          <h1 className="text-[2.5rem] font-poppins md:text-[3rem] font-bold text-primary mb-[3rem] text-center">
             Here's a Glimpse of My Work So Far;
           </h1>
           <ul className=" mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem]">
@@ -94,7 +95,7 @@ function Projects() {
                   "bg-primary/10 shadow-lg text-primary border border-primary/5 rounded-xl p-6 flex flex-col gap-5 transition-all duration-1000 ease-in-out",
                   {
                     "bg-primary/15!": active === index,
-                  }
+                  },
                 )}
                 onMouseOver={() => setActive(index)}
                 onMouseLeave={() => setActive(null)}
@@ -111,7 +112,7 @@ function Projects() {
                       "w-full h-auto  object-cover transition-all duration-3000 ease-in-out",
                       {
                         "scale-105": active === index,
-                      }
+                      },
                     )}
                   />
                 </div>

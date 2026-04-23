@@ -43,7 +43,7 @@ function Hero() {
           transition={{ duration: 1.1, delay: 0.3 }}
         >
           <div className="text-center">
-            <h1 className="text-[2rem] font-poppins sm:text-[2.5rem] md:text-[4rem] font-bold">
+            <h1 className="text-[2rem] font-poppins sm:text-[2.5rem] md:text-[3rem] font-bold">
               Hi, I'm Esther Oluwabuyi — a Frontend Developer.
             </h1>
 
