@@ -86,7 +86,7 @@ function AboutMe() {
                   <h4 className="text-[1.35rem] font-bold text-primary mb-2">
                     Favourite Quote
                   </h4>
-                  <p className="italic">“Good things are possible 💛”</p>
+                  <p className="italic">“Good things are possible. 💛”</p>
                 </div>
               </div>
             </section>
